@@ -10,10 +10,10 @@ import java.nio.charset.StandardCharsets;
  */
 public class Controller {
 
-    private final String HOME_DIR = System.getProperty("home.user");
-    private final String DEFAULT_FILE = System.getProperty("output.txt");
+    private final String HOME = System.getProperty("home.user");
+    private final String DEFAULT = System.getProperty("output.txt");
 
-    private File destination = new File(HOME_DIR + File.separator + DEFAULT_FILE);
+    private File destination = new File(HOME + File.separator + DEFAULT);
 
     public File getCurrentDestination() {
         return this.destination;
@@ -38,5 +38,4 @@ public class Controller {
                     os.println(string);
         }
     }
-
 }
